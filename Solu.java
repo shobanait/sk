@@ -1,12 +1,20 @@
-class Solu
-{
-public:
-string longeestCommonPrefix(vector<string>&strs)
-{
-int i,j,n=strs.size();
-if(n==0)return"";
-sort(strs.begin(),strs.begin()+n);
-for(j=0;j<strs[0].size()&&j<strs[n-1].size()&&strs[0][j]==strs[n-1][j];j++);
-return strs[0].substr(0.j);
-}
-};
+ackage prac;
+
+
+
+import java.util.Scanner;
+
+public class Solu {
+
+	      public static void main(String args[]) {  
+	           Scanner sc = new Scanner(System.in);  
+	           System.out.println("Enter the String:-");  
+	           String str = sc.nextLine();  
+	           System.out.println("Enter the length");  
+	           int c = sc.nextInt();  
+	           int g=str.length();
+	          sc.close();
+	           System.out.println(""+str.substring(g-c, g) );  
+	           System.out.println(""+str.substring(0, c) );  
+	      }  
+	 }  
